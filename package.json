@@ -1,0 +1,7 @@
+{
+	"name": "paper_crane_translations",
+	"dependencies": {
+		"body-parser": "^1.10.1",
+		"express": "^4.10.0"
+	}
+}
