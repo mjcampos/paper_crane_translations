@@ -11,3 +11,34 @@ myApp.config(function($routeProvider) {
 	.when('/german/legal', {templateUrl: 'partials/german/legal.html'})
 	.otherwise({redirectTo: '/'});
 });
+
+// Factories
+myApp.factory('mainFactory', function($http) {
+	var factory = {};
+	var page;
+
+	factory.get_page = function(pageName) {
+		page = pageName;
+	};
+
+	factory.currentPage = function(callback) {
+		callback(page);
+	};
+
+	return factory;
+})
+
+// Controllers
+myApp.controller("mainController", function($scope, mainFactory) {
+	mainFactory.currentPage(function(data) {
+		$scope.page = data;
+	});
+
+	console.log($scope.page);
+});
+
+myApp.controller("englishHomeController", function($scope, mainFactory) {
+	var data = "english home";
+	
+	mainFactory.get_page(data);
+});
