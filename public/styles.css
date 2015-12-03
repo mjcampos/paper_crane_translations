@@ -11,3 +11,7 @@ h1 {
 p {
 	font-size: 16px;
 }
+
+address > a {
+	text-decoration: underline;
+}
