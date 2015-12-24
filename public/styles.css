@@ -1,5 +1,9 @@
 body { 
-	background: url(assets/uk_germany.png) no-repeat center center fixed; 
+	background: url(assets/background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	padding-top: 80px;
 }
 
@@ -8,10 +12,14 @@ h1 {
 	font-size: 38px;
 }
 
-p {
-	font-size: 16px;
+p, ul > li, address {
+	font-size: 18px;
 }
 
 address > a {
 	text-decoration: underline;
+}
+
+li > a {
+	font-size: 20px;
 }
