@@ -1,4 +1,4 @@
-# paper_crane_translations
+# Paper Crane Translations
 
 Advertisement site for German-English translations. 
 
