@@ -8,6 +8,6 @@ app.use(bodyParser.json());
 
 var port = 8000;
 
-app.listen(8000, function() {
+app.listen(port, function() {
 	console.log("Paper Crane Translations active on port " + port);
 });
