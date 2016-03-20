@@ -24,6 +24,7 @@ p, ul > li, address {
 }
 
 address {
+	margin-top: 10px;
 	font-size: 26px;
 }
 
