@@ -1,42 +1,40 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 
-class Kontakt extends Component {
-	render() {
-		return (
-			<div>
-				<h1 className="text-center">Kontakt</h1>
+const Kontakt = () => {
+	return (
+		<div>
+			<h1 className="text-center">Kontakt</h1>
 
-				<Row>
-					<Col sm={4}>
-						<h2><u>Mailing Address:</u></h2>
-					</Col>
-				</Row>
+			<Row>
+				<Col sm={4}>
+					<h2><u>Mailing Address:</u></h2>
+				</Col>
+			</Row>
 
-				<Row>
-					<Col sm={{span: 4, offset: 4}}>
-						<h3>Nicholas Peterson</h3>
-						<p>N&uuml;rnberger Str. 114a</p>
-						<p>96050 Bamberg</p>
-						<p>Germany</p>
-					</Col>
-				</Row>
+			<Row>
+				<Col sm={{span: 4, offset: 4}}>
+					<h3>Nicholas Peterson</h3>
+					<p>N&uuml;rnberger Str. 114a</p>
+					<p>96050 Bamberg</p>
+					<p>Germany</p>
+				</Col>
+			</Row>
 
-				<Row>
-					<Col sm={4}>
-						<address><u>E-Mail:</u></address>
-					</Col>
-				</Row>
+			<Row>
+				<Col sm={4}>
+					<address><u>E-Mail:</u></address>
+				</Col>
+			</Row>
 
-				<Row>
-					<Col sm={{span: 4, offset: 4}}>
-						<address><a href="mailto:nickppeterson@gmail.com">nickppeterson@gmail.com</a></address>
-						
-					</Col>
-				</Row>
-			</div>
-		);
-	}
+			<Row>
+				<Col sm={{span: 4, offset: 4}}>
+					<address><a href="mailto:nickppeterson@gmail.com">nickppeterson@gmail.com</a></address>
+					
+				</Col>
+			</Row>
+		</div>
+	);
 }
 
 export default Kontakt;
