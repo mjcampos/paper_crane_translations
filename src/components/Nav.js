@@ -6,7 +6,7 @@ class Nav extends Component {
 	render() {
 		return (
 			<Navbar bg="dark" variant="dark" fixed="top">
-				<Navbar.Brand href="#"><Image src="./assets/logo.jpg" alt="Logo" height="32" width="32" fluid/></Navbar.Brand>
+				<Navbar.Brand><Link to="/"><Image src="./assets/logo.jpg" alt="Logo" height="32" width="32" fluid/></Link></Navbar.Brand>
 
 				<Navbar.Brand className="title">Paper Crane Translations</Navbar.Brand>
 
