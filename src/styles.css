@@ -1,5 +1,5 @@
 body { 
-	background: url(assets/background.jpg) no-repeat center center fixed; 
+	background: url(./assets/background.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -7,17 +7,11 @@ body {
 	padding-top: 80px;
 }
 
-h1 {
-	font-size: 38px;
-	color: white;
-}
-
-h2, h3 {
+h1, h2, h3 {
 	color: white;
 }
 
 p, ul > li, address {
-	font-size: 18px;
 	color: white;
 	font-weight: bold;
 }
@@ -29,10 +23,5 @@ address {
 
 address > a {
 	text-decoration: underline;
-	color: #1931CD;
-}
-
-li > a {
-	font-size: 20px;
 	color: #1931CD;
 }
