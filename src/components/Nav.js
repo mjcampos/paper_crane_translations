@@ -11,7 +11,6 @@ const Nav = () => {
 
 			<Navbar.Collapse className="justify-content-end">
 				<Navbar.Brand><Link to="/"><Image src="./assets/uk.jpg" height="30" width="60" fluid/></Link></Navbar.Brand>
-
 				<Navbar.Brand><Link to="/german"><Image src="./assets/germany.jpg" height="30" width="60" fluid/></Link></Navbar.Brand>
 			</Navbar.Collapse>
 		</Navbar>
