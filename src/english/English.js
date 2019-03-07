@@ -16,8 +16,6 @@ class English extends Component {
 
 	renderSwitch() {
 		switch(this.state.tab) {
-			case 'profile':
-				return <Profile/>;
 			case 'services':
 				return <Services/>;
 			case 'prices':
