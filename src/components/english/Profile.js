@@ -1,5 +1,6 @@
 import React from 'react';
-import {Row, Col, Image} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
+import NickImage from '../shared/NickImage';
 
 const Profile = () => {
 	return (
@@ -12,7 +13,7 @@ const Profile = () => {
 					<p>I am a native bilingual German-English speaker with a bachelor’s degree in German and I’m currently working on a Master’s Degree in Linguistics. I am educated in the linguistic structures of both English and German and, simultaneously, I have a native intuition of both languages. Furthermore, I have years of translating experience. If you need something translated into either English or German or need Language Tutoring, then I’m your ideal candidate for getting the job done!</p>
 				</Col>
 				
-				<Col sm={3}><Image src="./assets/nick.jpg" fluid/></Col>
+				<Col sm={3}><NickImage/></Col>
 			</Row>
 		</div>
 	);
