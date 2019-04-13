@@ -14,7 +14,7 @@ class Inputbox extends Component {
 
 	handleSubmit = e => {
 		e.preventDefault();
-		
+
 		this.props.findFact(this.state.code);
 	}
 
@@ -23,7 +23,10 @@ class Inputbox extends Component {
 
 		return (
 			<Form hidden={this.props.clicks >= requiredClicks ? false : true} onSubmit={this.handleSubmit}>
-				<Form.Control value={this.state.code} onChange={(e) => this.setState({code: e.target.value})}/>
+				<Form.Group>
+					<Form.Label>Congratulations! You've found my Easter Egg.</Form.Label>
+					<Form.Control value={this.state.code} onChange={(e) => this.setState({code: e.target.value})}/>
+				</Form.Group>
 			</Form>
 		);
 	}
