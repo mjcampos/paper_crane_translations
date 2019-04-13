@@ -19,7 +19,7 @@ class Inputbox extends Component {
 	}
 
 	render() {
-		var requiredClicks = 0;
+		var requiredClicks = 3;
 
 		return (
 			<Form hidden={this.props.clicks >= requiredClicks ? false : true} onSubmit={this.handleSubmit}>
