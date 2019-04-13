@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Form} from 'react-bootstrap';
+import {findFact} from '../../actions/index';
 
 class Inputbox extends Component {
 	constructor(props) {
@@ -13,7 +14,8 @@ class Inputbox extends Component {
 
 	handleSubmit = e => {
 		e.preventDefault();
-		console.log(this.state);
+		
+		this.props.findFact(this.state.code);
 	}
 
 	render() {
@@ -29,4 +31,4 @@ class Inputbox extends Component {
 
 var mapStateToProps = state => state;
 
-export default connect(mapStateToProps, null)(Inputbox);
+export default connect(mapStateToProps, {findFact})(Inputbox);

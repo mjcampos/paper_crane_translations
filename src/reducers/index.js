@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
 import clicks from './clicks';
+import facts from './facts';
 
 const rootReducer = combineReducers({
-	clicks
+	clicks,
+	facts
 });
 
 export default rootReducer;
