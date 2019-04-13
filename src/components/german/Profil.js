@@ -1,6 +1,7 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import NickImage from '../shared/NickImage';
+import InputBox from '../shared/InputBox';
 
 const Profil = () => {
 	return (
@@ -13,7 +14,10 @@ const Profil = () => {
 					<p>Ich bin ein bilingual Englisch-Deutscher Muttersprachler mit einem Bachelor in Germanistik und arbeite aktuell an meinem Master in Linguistik (Sprachwissenschaften). Ich verf&uuml;ge &uuml;ber die formale Bildung in den linguistischen Strukturen des Deutschen und Englischen und besitze gleichzeitig die muttersprachliche Intuition beider Sprachen. Hinzu kommt meine mehrj&auml;hrige Erfahrung mit &Uuml;bersetzungen. Wenn Sie etwas &uuml;bersetzt haben möchten oder Nachhilfe in deutscher oder englischer Sprache ben&ouml;tigen, dann bin ich genau der Richtige f&uuml;r den Job!</p>
 				</Col>
 				
-				<Col sm={3}><NickImage/></Col>
+				<Col sm={3}>
+					<NickImage/>
+					<InputBox/>
+				</Col>
 			</Row>
 		</div>
 	);

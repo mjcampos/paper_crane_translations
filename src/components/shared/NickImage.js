@@ -11,8 +11,4 @@ class NickImage extends Component {
 	}
 }
 
-function mapStateToProps(state) {
-	return state;
-}
-
-export default connect(mapStateToProps, {increment})(NickImage);
+export default connect(null, {increment})(NickImage);
